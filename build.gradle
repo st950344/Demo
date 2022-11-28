@@ -1,9 +1,17 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'com.github.st950344'
 version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+application {
+    mainClassName 'com.github.st950344.Main'
+}
+
 
 repositories {
     mavenCentral()
